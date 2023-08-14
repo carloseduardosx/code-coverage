@@ -3,19 +3,9 @@ codecov:
   round: down
   range: 70...100 # Range to be considered green
   status:
-    project:
-      default:
-        threshold: 1% # It's acceptable to have a drop of 1% in coverage
-        target: auto # Dynamic target based on the base branch coverage
-        paths:
-          - src
-    patch:
-      default:
-        threshold: 1% # It's acceptable to have a drop of 1% in coverage
-        target: auto # Dynamic target based on the base branch coverage
-        paths:
-          - src
-    changes: false
+    project: yes
+    patch: yes
+    changes: no
 
   require_ci_to_pass: false
   notify:

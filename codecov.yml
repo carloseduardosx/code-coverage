@@ -1,4 +1,10 @@
 codecov:
+  require_ci_to_pass: false
+  notify:
+    after_n_builds: 1
+    wait_for_ci: false
+
+coverage:
   precision: 2
   round: down
   range: 70...100 # Range to be considered green
@@ -6,11 +12,6 @@ codecov:
     project: yes
     patch: yes
     changes: no
-
-  require_ci_to_pass: false
-  notify:
-    after_n_builds: 1
-    wait_for_ci: false
 
 component_management:
   default_rules: # Default rules for the status check

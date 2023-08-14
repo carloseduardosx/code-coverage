@@ -1,7 +1,8 @@
-module.exports = function log(a) {
-  return Math.log(a);
-}
-
-module.exports = function getBaseLog(a, b) {
-  return Math.log(a) / Math.log(b);
+module.exports = {
+  getBaseLog(a, b) {
+    return Math.log(a) / Math.log(b);
+  },
+  log(a) {
+    return Math.log(a);
+  }
 }

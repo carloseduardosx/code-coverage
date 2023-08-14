@@ -23,11 +23,11 @@ component_management:
     - component_id: basic_operations
       name: Basic Operations
       paths:
-        - "src/basic_operations"
+        - "src/basic_operations/**"
     - component_id: advanced_operations
       name: Advanced Operations
       paths:
-        - "src/advanced_operations"
+        - "src/advanced_operations/**"
 
 comment:
   layout: "header, reach, diff, components, files"

@@ -1,0 +1,47 @@
+codecov:
+  precision: 2
+  round: down
+  range: 70...100 # Range to be considered green
+  status:
+    project:
+      default:
+        threshold: 1% # It's acceptable to have a drop of 1% in coverage
+        target: auto # Dynamic target based on the base branch coverage
+        paths:
+          - src
+    patch:
+      default:
+        threshold: 1% # It's acceptable to have a drop of 1% in coverage
+        target: auto # Dynamic target based on the base branch coverage
+        paths:
+          - src
+    changes: false
+
+  require_ci_to_pass: false
+  notify:
+    after_n_builds: 1
+    wait_for_ci: false
+
+component_management:
+  default_rules: # Default rules for the status check
+    statuses:
+      - type: project
+        target: auto # Dynamic target based on the base branch coverage
+      - type: patch
+        target: auto # Dynamic target based on the base branch coverage
+  individual_components:
+    - component_id: basic_operations
+      name: Basic Operations
+      paths:
+        - "src/basic_operations"
+    - component_id: advanced_operations
+      name: Advanced Operations
+      paths:
+        - "src/advanced_operations"
+
+comment:
+  layout: "header, reach, diff, components, files"
+  behavior: default
+  require_changes: false
+  require_base: false
+  require_head: true

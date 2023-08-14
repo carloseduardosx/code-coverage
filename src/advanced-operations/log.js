@@ -1,5 +1,5 @@
 module.exports = {
-  getBaseLog(a, b) {
+  baseLog(a, b) {
     return Math.log(a) / Math.log(b);
   },
   log(a) {

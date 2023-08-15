@@ -30,9 +30,9 @@ component_management:
       paths:
         - "src/advanced_operations/**"
 
-comment:
-  layout: "header, reach, diff, components, files"
-  behavior: default
-  require_changes: false
-  require_base: false
-  require_head: true
+comment: false
+#  layout: "header, reach, diff, components, files"
+#  behavior: default
+#  require_changes: false
+#  require_base: false
+#  require_head: true

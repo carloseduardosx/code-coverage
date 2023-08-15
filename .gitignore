@@ -1,3 +1,11 @@
+# Dependencies
 node_modules/
+
+# Code Coverage
 coverage/
+
+# IDEA
 .idea/
+
+# SonarQube
+.scannerwork/
